@@ -6,6 +6,7 @@ public class Payroll1 {
         Kerja p = new Kerja();
         p.setNik(101);
         p.setKaryawan("paijo");
+        p.setMasukPulang();
         p.getGaji(900);
         p.getTunjangan(200);
         p.getBonus(150);
@@ -15,6 +16,7 @@ public class Payroll1 {
         Kerja p1 = new Kerja();
         p1.setNik(102);
         p1.setKaryawan("lulu");
+        p1.setMasukPulang();
         p1.getGaji(875);
         p1.getTunjangan(200);
         p1.getBonus(100);
@@ -26,6 +28,7 @@ public class Payroll1 {
         p2.setNik(103);
         p2.setKaryawan("lala");
         p2.getGaji(1000);
+        p2.setMasukPulang();
         p2.getTunjangan(350);
         p2.getBonus(200);
         p2.getDenda(125);

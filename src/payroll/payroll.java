@@ -2,35 +2,66 @@ package payroll;
 
 public class payroll {
 
-    private double  jmasuk, jpulang, bonus, denda, gaji;
-    private String karyawan,tanggal, nik;
-    private int tunjangan;
+    private String karyawan, nik;
+    private int tunjangan, tanggal, total, denda, bonus, gaji, jmasuk, jpulang;
 
     //tanggal
     //calender ?
-    public void setJamMasuk (int i){
+    public void setJamMasuk(int i) {
         jmasuk = i;
     }
-    public void setJamPulang (int i){
+
+    public void setJamPulang(int i) {
         jpulang = i;
     }
-    public void setNIk( String s){
+
+    public void setNik(String s) {
         nik = s;
     }
-    public void setKaryawan(String s){
+
+    public void setKaryawan(String s) {
         karyawan = s;
     }
-    public void setGaji(int i){
+
+    public void setGaji(int i) {
         gaji = i;
+        this.gaji = gaji;
+        this.bonus = bonus;
+        tunjangan = tunjangan;
+        boolean hari;
+
+        if (hari == true) {
+            bonus = bonus * (jpulang - jmasuk);
+            if (jpulang > 29) {
+                bonus = bonus + bonus / 2;
+            }
+        } else if (jpulang >= 17) {
+            bonus = bonus * (jpulang - 17);
+
+            if (jpulang > 29) {
+                bonus += bonus / 2;
+            }
         
+
+    
+
+    public void setBonus(int i) {
+
     }
-    public void setTunjangan(int  i){
-        tunjangan = i;
+
+    public void setDenda(int i) {
+        denda = i;
+        if (jpulang < 17 && jmasuk > 8) {
+
+        }
     }
-    public void setBonus(Double d){
-        bonus = d;
+
+    public void getTotal(int i) {
+        total = (gaji + tunjangan + bonus) - denda;
     }
-    public void setDenda(Double d){
-        denda = d;
+
+    public void Display() {
+        System.out.println(jpulang + "," + jpulang + "," + nik + "," + karyawan + "," + gaji + "," + tunjangan + "," + bonus + "," + denda + ",");
     }
+
 }

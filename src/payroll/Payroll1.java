@@ -36,6 +36,6 @@ public class Payroll1 {
         p3.getDenda();
         p3.getTotal();
         p3.display();
-
+        System.out.println("");
     }
 }

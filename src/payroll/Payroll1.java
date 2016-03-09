@@ -20,7 +20,7 @@ public class Payroll1 {
         p1.setBonus(100);
         p1.setDenda(100);
         p1.display();
-        System.out.println("");
+       
 
         Kerja p2 = new Kerja();
         p2.setNik(103);

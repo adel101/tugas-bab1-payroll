@@ -2,11 +2,10 @@ package payroll;
 
 public class payroll {
 
-    private String karyawan, nik;
+    private String karyawan, nik, hari;
     private int tunjangan, tanggal, total, denda, bonus, gaji, jmasuk, jpulang;
 
-    //tanggal
-    //calender ?
+  
     public void setJamMasuk(int i) {
         jmasuk = i;
     }

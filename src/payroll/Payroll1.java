@@ -4,38 +4,34 @@ public class Payroll1 {
 
     public static void main(String[] args) {
         Kerja p = new Kerja();
-        p.setKaryawan();
-        p.setAbsensi();
-        p.getBonus();
-        p.getDenda();
-        p.getTotal();
+        p.setNik(101);
+        p.setKaryawan("paijo");
+        p.getGaji(900);
+        p.getTunjangan(200);
+        p.getBonus(150);
+        p.getDenda(75);
         p.display();
         
         Kerja p1 = new Kerja();
-        p1.setKaryawan();
-        p1.setAbsensi();
-        p1.getBonus();
-        p1.getDenda();
-        p1.getTotal();
+        p1.setNik(102);
+        p1.setKaryawan("lulu");
+        p1.getGaji(875);
+        p1.getTunjangan(200);
+        p1.getBonus(100);
+        p1.getDenda(100);
         p1.display();
         System.out.println("");
         
         Kerja p2 = new Kerja();
-        p2.setKaryawan();
-        p2.setAbsensi();
-        p2.getBonus();
-        p2.getDenda();
-        p2.getTotal();
+        p2.setNik(103);
+        p2.setKaryawan("lala");
+        p2.getGaji(1000);
+        p2.getTunjangan(350);
+        p2.getBonus(200);
+        p2.getDenda(125);
         p2.display();
         System.out.println("");
         
-        Kerja p3 = new Kerja();
-        p3.setKaryawan();
-        p3.setAbsensi();
-        p3.getBonus();
-        p3.getDenda();
-        p3.getTotal();
-        p3.display();
-        System.out.println("");
+       
     }
 }
